@@ -78,19 +78,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Raise
  * ,-----------------------------------------------------------------------------------.
- * | ESC  | PGUP | Bksp |  Up  | Del  | PGDN | Print| Num7 | Num8 | Num9 | Num- | Bksp |
+ * | ESC  | PGUP | Bksp |  Up  | Del  | PGDN | Print| Num7 | Num8 | Num9 | Num- | Del  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      | Home | Left | Down | Right| End  |  ß   | Num4 | Num5 | Num6 | Num+ |      |
+ * |      | Home | Left | Down | Right| End  |  ß   | Num4 | Num5 | Num6 | Num+ |   ́   |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Shift|      |      | Ins  | Enter|      |      | Num1 | Num2 | Num3 |NumRet|Enter |
+ * | Shift|      |      | Ins  | Enter|      |    ̀  | Num1 | Num2 | Num3 |NumRet|Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | Ctrl |      | Gui  | Alt  |      |      | Num0 |      |      |      |      |      |
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = LAYOUT_planck_grid(
-    KC_ESC , KC_PGUP, KC_BSPC, KC_UP,   KC_DEL,  KC_PGDN, KC_PSCR, KC_7,    KC_8,    KC_9,    KC_PMNS, KC_BSPC,
-    _______, KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  KC_LBRC, KC_4,    KC_5,    KC_6,    KC_PPLS, _______,
-    KC_LSFT, _______, _______, KC_INS,  KC_ENT,  _______, _______, KC_1,    KC_2,    KC_3,    KC_PENT, KC_ENT ,
+    KC_ESC , KC_PGUP, KC_BSPC, KC_UP,   KC_DEL,  KC_PGDN, KC_PSCR, KC_7,    KC_8,    KC_9,    KC_PMNS, KC_DEL,
+    _______, KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  KC_LBRC, KC_4,    KC_5,    KC_6,    KC_PPLS, KC_RBRC,
+    KC_LSFT, _______, _______, KC_INS,  KC_ENT,  _______, KC_EQL, KC_1,    KC_2,    KC_3,    KC_PENT, KC_ENT ,
     KC_LCTL, _______, KC_LGUI, KC_LALT, _______, _______, KC_0,    _______, _______, _______, _______, _______
 ),
 
